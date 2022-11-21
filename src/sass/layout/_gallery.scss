@@ -1,0 +1,38 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.gallery{
+    &__items{
+        grid-template-rows: 188px 188px 192px 192px;
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.quote{
+    &__content{
+        width: 132px;
+        @include desktop-screen{
+            width: 235px;
+        }
+        @include tablet-screen{
+            width: 235px;
+        }
+    }
+    &__icon{
+        width: 45px;
+        height: 35px;
+        @include desktop-screen{
+            width: 84px;
+            height: 65px;
+        }
+    }
+    &__image{
+        width: 293px;
+        @include desktop-screen{
+            width: unset;
+        }
+    }
+}

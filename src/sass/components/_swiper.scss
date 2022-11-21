@@ -1,0 +1,19 @@
+@import '../utils/variables';
+.swiper {
+    width: 100%;
+    height: fit-content;
+    &-button-prev, &-button-next{
+        top: calc(50% - 15px) !important;
+        color: $color-pink !important;
+        visibility: hidden;
+        @include desktop-screen{
+            visibility: visible;
+        }
+    }
+    &-button-prev{
+        left: 20px !important;
+    }
+    &-button-next{
+        right: 20px !important;
+    }
+}

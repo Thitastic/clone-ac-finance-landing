@@ -1,0 +1,15 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.press{
+
+}
+
+.carousel{
+    &__date{
+        line-height: 21.78px;
+    }
+    &__content{
+        line-height: 24px;
+    }
+}

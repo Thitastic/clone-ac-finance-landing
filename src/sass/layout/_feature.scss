@@ -1,0 +1,17 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.feature{
+    gap: 37px;
+    @include desktop-screen{
+        gap: 109.21px;
+    }
+    &__logo{
+        width: 31.06px;
+        height: 30.93px;
+        @include desktop-screen{
+            width: 41.7px;
+            height: 41.53px;
+        }
+    }
+}

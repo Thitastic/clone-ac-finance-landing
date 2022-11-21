@@ -1,0 +1,30 @@
+@import '../utils/variables';
+
+@mixin hover-link-arrow {
+    &:hover{
+        svg{
+            transform: translateX(5px);
+            transition: cubic-bezier(0.165, 0.84, 0.44, 1) 300ms;
+        }
+    }
+}
+
+//Responsive
+
+@mixin mobile-screen {
+    @media screen and (min-width: $screen-sm) {
+        @content;
+    }
+}
+
+@mixin desktop-screen {
+    @media screen and (min-width: $screen-lg) {
+        @content;
+    }
+}
+
+@mixin  tablet-screen {
+    @media screen and(min-width: $screen-md) and (max-width : ($screen-lg - 1)){
+        @content;
+    }
+}

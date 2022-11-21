@@ -1,0 +1,66 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.header{
+    &__logo{
+        &--img{
+            width: 34.15px;
+            height: 34.15px;
+        }
+    }
+    &__links--link{
+        @include hover-link-arrow;
+    }
+    &__fixed-menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        z-index: 30;
+        overflow: hidden;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 200ms;
+        @include desktop-screen{
+            position: static;
+            width: fit-content;
+            height: fit-content;
+            padding: 0;
+            z-index: inherit;
+        }
+        @include tablet-screen{
+            position: static;
+            width: fit-content;
+            height: fit-content;
+            padding: 0;
+            z-index: inherit;
+        }
+        li{
+            padding: 10px !important;
+            &:nth-of-type(2){
+                margin-top: 48px;
+                @include desktop-screen{
+                    margin-top: unset;
+                }
+                @include tablet-screen{
+                    margin-top: unset;
+                }
+            }
+            @include tablet-screen{
+                padding: unset;
+            }
+        }
+    }
+}
+
+.sticky-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: rgba($color-black , 0.2) 0px 7px 29px 0px;
+}
+
+.menu--active{
+    width: 100%;
+    padding: 25px;
+}

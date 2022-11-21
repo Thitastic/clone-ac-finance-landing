@@ -1,0 +1,4 @@
+@import '../utils/variables';
+.heading-shadow{
+    filter: drop-shadow(2px 0px 0px $color-green) drop-shadow(-2px -2px 0px $color-white);
+}

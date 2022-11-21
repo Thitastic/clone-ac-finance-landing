@@ -1,0 +1,73 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+
+.hero{
+    &__link{
+        @include hover-link-arrow;
+    }
+    &__graphic{
+        height: 468.19px;
+    }
+    &__app-icon{
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        height: 182px;
+        width: 182px;
+    }
+    &__mobile{
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        height: 100%;
+    }
+
+    @include desktop-screen{
+        &__mobile{
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            height: 100%;
+            width: 378px;
+        }
+        &__app-icon{
+            position: absolute;
+            bottom: 0;
+            left: -3%;
+            height: 304px;
+            width: 304px;
+        }
+        &__graphic{
+            height: unset;
+        }
+    }
+    @include tablet-screen{
+        &__mobile{
+            right: calc(50% - 378px/2);
+            bottom: 0;
+            z-index: 1;
+            height: 100%;
+            width: 378px;
+        }
+        &__app-icon{
+            position: absolute;
+            bottom: 0;
+            left: calc(35% - 182px/2);
+            height: 182px;
+            width: 182px;
+        }
+        &__graphic{
+            height: 468.19px;
+        }
+    }
+}
+
+.article{
+    &__img{
+        width: 192px;
+        height: 96px;
+        @include tablet-screen{
+            width: 100%;
+        }
+    }
+}

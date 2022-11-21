@@ -1,0 +1,15 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+
+.footer{
+    &__logo{
+        svg{
+            width: 34.15px;
+            height: 34.15px;
+        }
+    }
+    &__social{
+        width: 18px;
+        height: 18px;
+    }
+}

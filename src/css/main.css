@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    :root{
+        --color-pink: 233 0 161;
+        --color-green: 62 255 185;
+        --color-dark-1: 17 17 17;
+        --color-dark-2 : 51 51 51;
+        --color-dark-3: 85 85 85;
+        --color-dark-4: 119 119 119;
+        --color-light-1: 255 255 255;
+        --color-light-2: 238 238 238;
+        --color-light-3: 204 204 204;
+        --color-light-4: 170 170 170;
+    }
+}

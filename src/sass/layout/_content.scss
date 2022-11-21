@@ -1,0 +1,15 @@
+.content{
+    overflow: hidden;
+    &__background{
+        z-index: -1;
+        top: 55px;
+        left: -160px;
+        width: 649px;
+        height: 649px;
+        @include desktop-screen{
+            width: 1084px;
+            height: 1116px;
+            left: 480px;
+        }
+    }
+}
